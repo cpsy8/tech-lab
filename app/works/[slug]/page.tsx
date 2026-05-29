@@ -163,7 +163,7 @@ export default async function WorkDetail({ params }: { params: Promise<{ slug: s
       )}
 
       {/* CTA */}
-      <div className="section" style={{ padding: '0 46px 46px' }}>
+      <div className="section" style={{ paddingTop: 0, paddingBottom: 46 }}>
         <div
           className="card reveal"
           style={{

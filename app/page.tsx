@@ -86,7 +86,14 @@ export default function Home() {
       </div>
 
       {/* floating stat card */}
-      <div style={{ padding: '0 46px', marginTop: -10, position: 'relative', zIndex: 3 }}>
+      <div
+        style={{
+          padding: '0 max(46px, (100% - 1180px) / 2)',
+          marginTop: -10,
+          position: 'relative',
+          zIndex: 3,
+        }}
+      >
         <div
           className="card"
           style={{
@@ -148,7 +155,7 @@ export default function Home() {
       </div>
 
       {/* logo trust strip */}
-      <div className="section" style={{ padding: '30px 46px' }}>
+      <div className="section" style={{ paddingTop: 30, paddingBottom: 30 }}>
         <p
           className="body"
           style={{
@@ -473,7 +480,7 @@ export default function Home() {
       </div>
 
       {/* closing CTA */}
-      <div className="section" style={{ padding: '0 46px 46px' }}>
+      <div className="section" style={{ paddingTop: 0, paddingBottom: 46 }}>
         <div
           className="card reveal"
           style={{

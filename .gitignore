@@ -16,3 +16,6 @@ next-env.d.ts
 # misc
 *.tsbuildinfo
 .DS_Store
+
+# local Claude Code config (dev/preview helpers)
+.claude/

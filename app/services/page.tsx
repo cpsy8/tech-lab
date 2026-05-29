@@ -185,7 +185,7 @@ export default function ServicesPage() {
       </div>
 
       {/* closing CTA */}
-      <div className="section" style={{ padding: '0 46px 46px' }}>
+      <div className="section" style={{ paddingTop: 0, paddingBottom: 46 }}>
         <div
           className="card reveal"
           style={{
