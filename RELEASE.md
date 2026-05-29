@@ -28,3 +28,9 @@ docs/CI/tooling changes may use the `no-release-note` label to bypass.
 - Contact + newsletter forms wired to Formspree (`NEXT_PUBLIC_FORMSPREE_ID`) with a `mailto` fallback
   and a success confirmation card.
 - GitHub Actions deploy to GitHub Pages and tag-driven GitHub Releases.
+- Self-host the three brand fonts (Inter Tight, Newsreader, Space Mono) via `next/font/local` —
+  no Google CDN or build-time fetch.
+- Fix font cascade bug: move the `next/font` CSS variables to `<html>` so `--sans`/`--serif`/`--mono`
+  resolve (previously empty → everything fell back to the browser default serif).
+- Full-bleed page surface: backgrounds span the viewport while content stays in a centered
+  ~1180px column.
