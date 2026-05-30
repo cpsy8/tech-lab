@@ -26,6 +26,7 @@ export default function ThemeToggle() {
     } catch {
       /* ignore */
     }
+    (window as unknown as { __bsSetFavicon?: () => void }).__bsSetFavicon?.();
   };
 
   return (
